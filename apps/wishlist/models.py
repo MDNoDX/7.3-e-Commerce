@@ -8,3 +8,4 @@ class Wishlist(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='wishlist')
     products = models.ManyToManyField(Product, related_name='wishlisted_by')
     created_at = models.DateTimeField(auto_now_add=True)
+    
