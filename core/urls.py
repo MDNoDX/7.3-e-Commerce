@@ -22,6 +22,7 @@ urlpatterns = [
     path('api/products/', include('apps.products.urls', namespace='products')),
     path('api/reviews/', include('apps.reviews.urls', namespace='reviews')),
     path('api/carts/', include('apps.carts.urls', namespace='carts')),
-    path('api/orders/', include('apps.orders.urls', namespace='orders'))
+    path('api/orders/', include('apps.orders.urls', namespace='orders')),
+    path('api/wishlist/', include('apps.wishlist.urls', namespace='wishlist'))
     
 ]
